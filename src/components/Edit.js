@@ -57,6 +57,8 @@ export default class Edit extends Component {
         axios.post('http://localhost:4444/persons/update/' + this.props.match.params.id, obj)
             .then(res => console.log(res.data));
         this.props.history.push('/index');
+        window.location.reload();
+        
     }
   
   

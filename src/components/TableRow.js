@@ -11,6 +11,7 @@ class TableRow extends Component {
     axios.get('http://localhost:4444/persons/delete/'+this.props.obj._id)
       .then(res => console.log('Deleted'))
       .catch(err => console.log(err));
+    window.location.reload();
   }
 
   render() {
